@@ -1,0 +1,191 @@
+// Put any @imports here
+// See Readme for a list of supported ones
+@import "foundation";
+@import "font-awesome";
+@import "bourbon";
+
+$accent-color1: #DC143C;
+$accent-color2: #EEE8CD;
+$accent-color3: black;
+$accent-color4: green;
+$accent-color5: #EEF3E2;
+
+$font-lower: 'Syncopate', sans-serif;
+$font-title: 'Play', sans-serif;
+$font-content: 'Slabo', serif;
+$font-fun: 'Source Code Pro';
+$font-movie: 'Fascinate', serif;
+
+body {
+  background: $accent-color5;
+}
+p {
+  font-family: $font-fun;
+}
+a {
+  font-family: $font-fun;
+}
+h2 {
+  font-family: $font-fun;
+}
+.picture {
+  float: right;
+  //border-bottom: 1px solid $accent-color4;
+}
+.top-bar {
+  height: 136pt;
+  @include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
+  border-bottom: 1px solid $accent-color4;
+}
+.top-bar h1{
+  font-family: $font-lower;
+    color: $accent-color4;
+    font-size: 24pt;
+
+}
+.name a{
+  font-family: $font-lower;
+    color: $accent-color4;
+    font-size: 20pt;
+
+}
+.hub {
+  color: white;
+  font-size: 36pt;
+}
+.top-bar span {
+  color: $accent-color4;
+  font-size: 36pt;
+}
+
+//About Me
+.aboutMe {
+    border-bottom: 1px solid $accent-color4;
+
+}
+.aboutMe h2{
+  font-family: $font-fun;
+  margin-left: 150pt;
+  margin-top: 50pt;
+  color: $accent-color4;
+}
+.aboutMe p{
+  font-family: $font-fun;
+  margin-left: 150pt;
+  margin-right: 150pt;
+  color: $accent-color4;
+}
+//sidekick
+.sidekick {
+ //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
+ display: inline-block;
+ background: $accent-color2;
+ width: 100%;
+ border-bottom: 1px solid $accent-color4;
+}
+.sidekickRight {
+  width: 415px;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+}
+.sidekick h2 {
+  font-family: $font-fun;
+ // margin-left: 150pt;
+  margin-top: 50pt;
+  color: $accent-color4;
+}
+.sidekickText {
+  width: 500px;
+  float: left;
+  margin-left: 150pt;
+}
+//godfather
+.godfather {
+ //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
+ display: inline-block;
+ background: $accent-color5;
+ width: 100%;
+}
+.godfatherRight {
+  width: 415px;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+}
+.godfather h2 {
+  font-family: $font-fun;
+ // margin-left: 150pt;
+  margin-top: 50pt;
+  color: $accent-color4;
+}
+.godfatherText {
+  width: 500px;
+  float: left;
+  margin-left: 150pt;
+}
+//album
+.album {
+ //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
+ display: inline-block;
+ background: $accent-color2;
+ width: 100%;
+ border-bottom: 1px solid $accent-color4;
+}
+.albumRight {
+  width: 415px;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+  margin-bottom: 10pt;
+}
+.album h2 {
+  font-family: $font-fun;
+ // margin-left: 150pt;
+  margin-top: 50pt;
+  color: $accent-color4;
+}
+.albumText {
+  width: 500px;
+  float: left;
+  margin-left: 150pt;
+}
+
+//consulting
+.consulting {
+ //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
+ display: inline-block;
+ background: $accent-color5;
+ width: 100%;
+ border-bottom: 1px solid $accent-color4;
+}
+.consultingRight {
+  width: 415px;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+}
+.consulting h2 {
+  font-family: $font-fun;
+ // margin-left: 150pt;
+  margin-top: 50pt;
+  color: $accent-color4;
+}
+.consultingText {
+  width: 500px;
+  float: left;
+  margin-left: 150pt;
+}
+
