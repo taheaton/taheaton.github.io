@@ -17,7 +17,7 @@ $font-fun: 'Source Code Pro';
 $font-movie: 'Fascinate', serif;
 
 body {
-  background: $accent-color5;
+  background: $accent-color3;
 }
 p {
   font-family: $font-fun;
@@ -32,11 +32,10 @@ h2 {
   float: right;
   //border-bottom: 1px solid $accent-color4;
 }
-nav.top-bar {
+.top-bar {
   height: 136pt;
   @include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
   border-bottom: 1px solid $accent-color4;
-  
 }
 .top-bar h1{
   font-family: $font-lower;
@@ -45,7 +44,7 @@ nav.top-bar {
 
 }
 .name a{
-  font-family: $font-lower;
+  font-family: $font-fun;
     color: $accent-color4;
     font-size: 20pt;
 
@@ -58,7 +57,6 @@ nav.top-bar {
   color: $accent-color4;
   font-size: 36pt;
 }
-
 
 //About Me
 .aboutMe {
@@ -111,7 +109,8 @@ nav.top-bar {
  display: inline-block;
  background: $accent-color5;
  width: 100%;
- border-bottom: 1px solid $accent-color4;
+  border-bottom: 1px solid $accent-color4;
+
 }
 .godfatherRight {
   width: 415px;
@@ -191,3 +190,4 @@ nav.top-bar {
   float: left;
   margin-left: 150pt;
 }
+
