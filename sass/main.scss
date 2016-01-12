@@ -1,193 +1,177 @@
 // Put any @imports here
 // See Readme for a list of supported ones
+
 @import "foundation";
-@import "font-awesome";
 @import "bourbon";
+@import "font-awesome";
 
-$accent-color1: #DC143C;
-$accent-color2: #EEE8CD;
-$accent-color3: black;
-$accent-color4: green;
-$accent-color5: #EEF3E2;
-
-$font-lower: 'Syncopate', sans-serif;
+$accent-color: #8FBC8F;
 $font-title: 'Play', sans-serif;
-$font-content: 'Slabo', serif;
-$font-fun: 'Source Code Pro';
-$font-movie: 'Fascinate', serif;
+$font-content: 'Syncopate', sans-serif;
 
-body {
-  background: $accent-color3;
+// index formatting
+html {
+  height: 100%;
+  }
+  body {
+ // @include linear-gradient(to top, #DCDCDC, #98F5FF);
+  background : url("https://images.unsplash.com/photo-1443557661966-8b4795a6f62c?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=90c9b93842dc0e7f838e81f6b1116852") ;
+ // background-repeat: no-repeat;
+  @include linear-gradient(to right, black, black, #3D3D3D, grey, #3D3D3D,  black);
+  min-height: 100%;
 }
-p {
-  font-family: $font-fun;
+.top-title {
+  font-family: $font-title;
+  margin-left: 14px;
+  color: white;
 }
-a {
-  font-family: $font-fun;
-}
-h2 {
-  font-family: $font-fun;
-}
-.picture {
-  float: right;
-  //border-bottom: 1px solid $accent-color4;
+
+.top-title span {
+  color: $accent-color;
 }
 .top-bar {
-  height: 136pt;
-  @include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
-  border-bottom: 1px solid $accent-color4;
-}
-.top-bar h1{
-  font-family: $font-lower;
-    color: $accent-color4;
-    font-size: 24pt;
+  border-top: 2px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
+  opacity: 1.0;
+  margin-bottom: 15px;
 
 }
-.name a{
-  font-family: $font-fun;
-    color: $accent-color4;
-    font-size: 20pt;
-
+.top-bar a {
+  height: 40px;
+  font-family: $font-title;
 }
-.hub {
+.fa-twitter, .fa-linkedin-square, .fa-envelope {
+  float: right;
+  margin: 13px;
+  color: $accent-color;
+  font-size: 85%;
+}
+
+// Home Formatting
+.homecontainer {
+  background : url("https://images.unsplash.com/photo-1443557661966-8b4795a6f62c?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=90c9b93842dc0e7f838e81f6b1116852") ;
+  background-repeat: no-repeat;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  border-radius: 5px;
+
+  }
+  .homecontainer h2{
   color: white;
-  font-size: 36pt;
+  font-family: $font-content;
+  height: 700px;
+  //padding: 0pt;
+  //margin-left: 20pt;
+  //background-color: blue;
+  opacity: 0.5;
+  //max-width: 450pt;
+  //text-align: center;
 }
-.top-bar span {
-  color: $accent-color4;
-  font-size: 36pt;
-}
-
-//About Me
-.aboutMe {
-    border-bottom: 1px solid $accent-color4;
-
-}
-.aboutMe h2{
-  font-family: $font-fun;
-  margin-left: 150pt;
-  margin-top: 50pt;
-  color: $accent-color4;
-}
-.aboutMe p{
-  font-family: $font-fun;
-  margin-left: 150pt;
-  margin-right: 150pt;
-  color: $accent-color4;
-}
-//sidekick
-.sidekick {
- //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
- display: inline-block;
- background: $accent-color2;
- width: 100%;
- border-bottom: 1px solid $accent-color4;
-}
-.sidekickRight {
-  width: 415px;
-  float: right;
-  display: inline-block;
-  top: 100px;
-  left: 50px;
-  margin-top: 50pt;
-  margin-right: 100pt;
-}
-.sidekick h2 {
-  font-family: $font-fun;
- // margin-left: 150pt;
-  margin-top: 50pt;
-  color: $accent-color4;
-}
-.sidekickText {
-  width: 500px;
-  float: left;
-  margin-left: 150pt;
-}
-//godfather
-.godfather {
- //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
- display: inline-block;
- background: $accent-color5;
- width: 100%;
-  border-bottom: 1px solid $accent-color4;
-
-}
-.godfatherRight {
-  width: 415px;
-  float: right;
-  display: inline-block;
-  top: 100px;
-  left: 50px;
-  margin-top: 50pt;
-  margin-right: 100pt;
-}
-.godfather h2 {
-  font-family: $font-fun;
- // margin-left: 150pt;
-  margin-top: 50pt;
-  color: $accent-color4;
-}
-.godfatherText {
-  width: 500px;
-  float: left;
-  margin-left: 150pt;
-}
-//album
-.album {
- //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
- display: inline-block;
- background: $accent-color2;
- width: 100%;
- border-bottom: 1px solid $accent-color4;
-}
-.albumRight {
-  width: 415px;
-  float: right;
-  display: inline-block;
-  top: 100px;
-  left: 50px;
-  margin-top: 50pt;
-  margin-right: 100pt;
-  margin-bottom: 10pt;
-}
-.album h2 {
-  font-family: $font-fun;
- // margin-left: 150pt;
-  margin-top: 50pt;
-  color: $accent-color4;
-}
-.albumText {
-  width: 500px;
-  float: left;
-  margin-left: 150pt;
+.homecontainer span {
+  color: $accent-color;
 }
 
-//consulting
-.consulting {
- //@include linear-gradient(to bottom, #7b797c, #7b797c,#605e61, #ffffff, #ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#BABABA );
- display: inline-block;
- background: $accent-color5;
- width: 100%;
- border-bottom: 1px solid $accent-color4;
+
+// Contact Page Formatting
+.contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid $accent-color;
+  opacity: 0.9;
+  @include linear-gradient(to top, #2a200a, #3f3c48);
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0px;
+  border-radius: 10px;
+  textarea {
+    height: 100px;
+  }
 }
-.consultingRight {
-  width: 415px;
+  
+.contact-form h3 {
+    color: white;
+    font-family: $font-title;
+    font-size: 1.9em;
+    span {
+      color: white;
+    }
+}
+  button {
+    background-color: $accent-color;
+    color: black;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+}
+.contact-form p {
+  color: white;
+}
+//About Page
+.about-container {
+  
+  width: 1170px;
+  height: 100%;
+  @include linear-gradient(to top, #171717, #3B3B3B);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  padding: 25px;
+}
+.about-left {
+  max-width: 500px;
+  color: white;
+
+  
+}
+hr {
+  color: $accent-color;
+  border: 1px solid $accent-color;
+}
+.about-right {
+  color: white;
+  
   float: right;
-  display: inline-block;
-  top: 100px;
-  left: 50px;
-  margin-top: 50pt;
-  margin-right: 100pt;
+  display: inline;
 }
-.consulting h2 {
-  font-family: $font-fun;
- // margin-left: 150pt;
-  margin-top: 50pt;
-  color: $accent-color4;
+.about-right img{
+  
+  max-width: 450px;
+  border-radius: 40px;
+  
 }
-.consultingText {
-  width: 500px;
-  float: left;
-  margin-left: 150pt;
+.about-right h5 {
+  color: $accent-color;
 }
+ul {
+    
+}
+.about-left li {
+  list-style: none;
+  margin-left: 10px;
+}
+.fa-wrench {
+  color: $accent-color;
+}
+.list-container {
+  color: white;
+}
+.single {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 

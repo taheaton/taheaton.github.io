@@ -8512,13 +8512,13 @@ h2 {
 
 .aboutMe h2 {
   font-family: "Source Code Pro";
-  margin-left: 150pt;
+  margin-left: 50pt;
   margin-top: 50pt;
   color: green; }
 
 .aboutMe p {
   font-family: "Source Code Pro";
-  margin-left: 150pt;
+  margin-left: 50pt;
   margin-right: 150pt;
   color: green; }
 
@@ -8529,13 +8529,15 @@ h2 {
   border-bottom: 1px solid green; }
 
 .sidekickRight {
-  width: 415px;
+  max-width: 30%;
   float: right;
   display: inline-block;
   top: 100px;
   left: 50px;
   margin-top: 50pt;
-  margin-right: 100pt; }
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
+}
 
 .sidekick h2 {
   font-family: "Source Code Pro";
@@ -8543,23 +8545,27 @@ h2 {
   color: green; }
 
 .sidekickText {
-  width: 500px;
+  max-width: 50%;
   float: left;
-  margin-left: 150pt; }
+  margin-left: 50pt; }
 
 .godfather {
   display: inline-block;
   background: #EEF3E2;
-  width: 100%; }
+  width: 100%; 
+  border-bottom: 1px solid green; 
+}
 
 .godfatherRight {
-  width: 415px;
+  max-width: 30%;
   float: right;
   display: inline-block;
   top: 100px;
   left: 50px;
   margin-top: 50pt;
-  margin-right: 100pt; }
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
+}
 
 .godfather h2 {
   font-family: "Source Code Pro";
@@ -8567,25 +8573,27 @@ h2 {
   color: green; }
 
 .godfatherText {
-  width: 500px;
+  width: 50%;
   float: left;
-  margin-left: 150pt; }
+  margin-left: 50pt; }
 
 .album {
+  margin-top: -5px;
   display: inline-block;
   background: #EEE8CD;
   width: 100%;
   border-bottom: 1px solid green; }
 
 .albumRight {
-  width: 415px;
+  max-width: 30%;
   float: right;
   display: inline-block;
   top: 100px;
   left: 50px;
   margin-top: 50pt;
   margin-right: 100pt;
-  margin-bottom: 10pt; }
+  margin-bottom: 5pt; 
+}
 
 .album h2 {
   font-family: "Source Code Pro";
@@ -8593,9 +8601,9 @@ h2 {
   color: green; }
 
 .albumText {
-  width: 500px;
+ max-width: 50%;
   float: left;
-  margin-left: 150pt; }
+  margin-left: 50pt; }
 
 .consulting {
   display: inline-block;
@@ -8604,13 +8612,15 @@ h2 {
   border-bottom: 1px solid green; }
 
 .consultingRight {
-  width: 415px;
+  max-width: 30%;
   float: right;
   display: inline-block;
   top: 100px;
   left: 50px;
   margin-top: 50pt;
-  margin-right: 100pt; }
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
+}
 
 .consulting h2 {
   font-family: "Source Code Pro";
@@ -8618,8 +8628,8 @@ h2 {
   color: green; }
 
 .consultingText {
-  width: 500px;
+  max-width: 50%;
   float: left;
-  margin-left: 150pt; }
+  margin-left: 50pt; }
 
 /*# sourceMappingURL=main.css.map */
