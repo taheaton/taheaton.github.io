@@ -8528,6 +8528,10 @@ h2 {
   width: 100%;
   border-bottom: 1px solid green; }
 
+.bold {
+  font-weight: bold;
+  color: red;
+}
 .sidekickRight {
   max-width: 30%;
   float: right;
