@@ -1,177 +1,164 @@
-// Put any @imports here
-// See Readme for a list of supported ones
+body {
+  background: #EEF3E2; }
 
-@import "foundation";
-@import "bourbon";
-@import "font-awesome";
+p {
+  font-family: "Source Code Pro"; }
 
-$accent-color: #8FBC8F;
-$font-title: 'Play', sans-serif;
-$font-content: 'Syncopate', sans-serif;
+a {
+  font-family: "Source Code Pro"; }
 
-// index formatting
-html {
-  height: 100%;
-  }
-  body {
- // @include linear-gradient(to top, #DCDCDC, #98F5FF);
-  background : url("https://images.unsplash.com/photo-1443557661966-8b4795a6f62c?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=90c9b93842dc0e7f838e81f6b1116852") ;
- // background-repeat: no-repeat;
-  @include linear-gradient(to right, black, black, #3D3D3D, grey, #3D3D3D,  black);
-  min-height: 100%;
-}
-.top-title {
-  font-family: $font-title;
-  margin-left: 14px;
-  color: white;
-}
+h2 {
+  font-family: "Source Code Pro"; }
 
-.top-title span {
-  color: $accent-color;
-}
+.picture {
+  float: right; }
+
 .top-bar {
-  border-top: 2px solid $accent-color;
-  border-bottom: 2px solid $accent-color;
-  opacity: 1.0;
-  margin-bottom: 15px;
+  height: 136pt;
+  background-color: #7b797c;
+  background-image: -webkit-linear-gradient(top, #7b797c, #7b797c, #605e61, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #BABABA);
+  background-image: linear-gradient(to bottom,#7b797c, #7b797c, #605e61, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #BABABA);
+  border-bottom: 1px solid green; }
 
-}
-.top-bar a {
-  height: 40px;
-  font-family: $font-title;
-}
-.fa-twitter, .fa-linkedin-square, .fa-envelope {
+.top-bar h1 {
+  font-family: "Syncopate", sans-serif;
+  color: green;
+  font-size: 24pt; }
+
+.name a {
+  font-family: "Syncopate", sans-serif;
+  color: green;
+  font-size: 20pt; }
+
+.hub {
+  color: white;
+  font-size: 36pt; }
+
+.top-bar span {
+  color: green;
+  font-size: 36pt; }
+
+.aboutMe {
+  border-bottom: 1px solid green; }
+
+.aboutMe h2 {
+  font-family: "Source Code Pro";
+  margin-left: 50pt;
+  margin-top: 50pt;
+  color: green; }
+
+.aboutMe p {
+  font-family: "Source Code Pro";
+  margin-left: 50pt;
+  margin-right: 150pt;
+  color: green; }
+
+.sidekick {
+  display: inline-block;
+  background: #EEE8CD;
+  width: 100%;
+  border-bottom: 1px solid green; }
+
+.sidekickRight {
+  max-width: 30%;
   float: right;
-  margin: 13px;
-  color: $accent-color;
-  font-size: 85%;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
 }
 
-// Home Formatting
-.homecontainer {
-  background : url("https://images.unsplash.com/photo-1443557661966-8b4795a6f62c?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=90c9b93842dc0e7f838e81f6b1116852") ;
-  background-repeat: no-repeat;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
-  border-radius: 5px;
+.sidekick h2 {
+  font-family: "Source Code Pro";
+  margin-top: 50pt;
+  color: green; }
 
-  }
-  .homecontainer h2{
-  color: white;
-  font-family: $font-content;
-  height: 700px;
-  //padding: 0pt;
-  //margin-left: 20pt;
-  //background-color: blue;
-  opacity: 0.5;
-  //max-width: 450pt;
-  //text-align: center;
-}
-.homecontainer span {
-  color: $accent-color;
+.sidekickText {
+  max-width: 50%;
+  float: left;
+  margin-left: 50pt; }
+
+.godfather {
+  display: inline-block;
+  background: #EEF3E2;
+  width: 100%; 
+  border-bottom: 1px solid green; 
 }
 
-
-// Contact Page Formatting
-.contact-form {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-  text-align: center;
-  border: 2px solid $accent-color;
-  opacity: 0.9;
-  @include linear-gradient(to top, #2a200a, #3f3c48);
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-top: 0px;
-  border-radius: 10px;
-  textarea {
-    height: 100px;
-  }
-}
-  
-.contact-form h3 {
-    color: white;
-    font-family: $font-title;
-    font-size: 1.9em;
-    span {
-      color: white;
-    }
-}
-  button {
-    background-color: $accent-color;
-    color: black;
-    border-radius: 10px;
-    width: 50%;
-    height: 50%;
-    padding: 5px;
-}
-.contact-form p {
-  color: white;
-}
-//About Page
-.about-container {
-  
-  width: 1170px;
-  height: 100%;
-  @include linear-gradient(to top, #171717, #3B3B3B);
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 40px;
-  padding: 25px;
-}
-.about-left {
-  max-width: 500px;
-  color: white;
-
-  
-}
-hr {
-  color: $accent-color;
-  border: 1px solid $accent-color;
-}
-.about-right {
-  color: white;
-  
+.godfatherRight {
+  max-width: 30%;
   float: right;
-  display: inline;
-}
-.about-right img{
-  
-  max-width: 450px;
-  border-radius: 40px;
-  
-}
-.about-right h5 {
-  color: $accent-color;
-}
-ul {
-    
-}
-.about-left li {
-  list-style: none;
-  margin-left: 10px;
-}
-.fa-wrench {
-  color: $accent-color;
-}
-.list-container {
-  color: white;
-}
-.single {
-  color: white;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
 }
 
+.godfather h2 {
+  font-family: "Source Code Pro";
+  margin-top: 50pt;
+  color: green; }
 
+.godfatherText {
+  width: 50%;
+  float: left;
+  margin-left: 50pt; }
 
+.album {
+  margin-top: -5px;
+  display: inline-block;
+  background: #EEE8CD;
+  width: 100%;
+  border-bottom: 1px solid green; }
 
+.albumRight {
+  max-width: 30%;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
+}
 
+.album h2 {
+  font-family: "Source Code Pro";
+  margin-top: 50pt;
+  color: green; }
 
+.albumText {
+ max-width: 50%;
+  float: left;
+  margin-left: 50pt; }
 
+.consulting {
+  display: inline-block;
+  background: #EEF3E2;
+  width: 100%;
+  border-bottom: 1px solid green; }
 
+.consultingRight {
+  max-width: 30%;
+  float: right;
+  display: inline-block;
+  top: 100px;
+  left: 50px;
+  margin-top: 50pt;
+  margin-right: 100pt;
+  margin-bottom: 5pt; 
+}
 
+.consulting h2 {
+  font-family: "Source Code Pro";
+  margin-top: 50pt;
+  color: green; }
 
-
-
+.consultingText {
+  max-width: 50%;
+  float: left;
+  margin-left: 50pt; }
